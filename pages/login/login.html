@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="/pages/login/login.css">
+</head>
+<body>
+
+    <div class="G nav">
+       
+        <a class="service" href="/pages/services/services.html">service</a>
+
+        <div class="firstnav">
+            <a href="/pages/signin/sign.html">signIn</a>
+            <a href="/pages/login/login.html">logIn</a>
+        </div>
+
+       
+        <div class="secondnav">
+            <a href="/pages/contactus/contactus.html">contact us</a>
+            <a href="/pages/aboutus/aboutus.html">about us</a>
+            <a href="/pages/faq/faq.html">faQ</a>
+        </div>
+    </div>
+
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <div id="loginForm">
+            
+            <label for="username">Email:</label>
+            <input type="text" id="email" name="username" placeholder="Enter your email">
+    
+            <div class="form-group">
+            <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required>
+                <input type="checkbox"  id="checkbox"> 
+           </div>
+
+           
+    
+          <button id="loginButton" >Login</button>
+
+           <div class="form-group2">
+                <p class="creatAcc">Don't  have an account ?</p>
+                <a class="creatAccLink" href="/pages/signin/sign.html">sign In</a>
+           </div>
+
+           <p id="passwordError" class="error"> </p>
+     
+        </div>
+      </div>
+    
+      <script src="/pages/login/login.js"></script>
+    
+</body>
+</html>

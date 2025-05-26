@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="/pages/signin/signin.css">
+</head>
+<body>
+
+    <div class="Gnav">
+       
+        <a class="service" href="/pages/services/services.html">service</a>
+
+        <div class="firstnav">
+            <a href="/pages/signin/sign.html">signIn</a>
+            <a href="/pages/login/login.html">logIn</a>
+        </div>
+
+
+        <div class="secondnav">
+            <a href="/pages/contactus/contactus.html">contact us</a>
+            <a href="/pages/aboutus/aboutus.html">about us</a>
+            <a href="/pages/faq/faq.html">faQ</a>
+        </div>
+
+    </div>
+
+    <div class="login-container">
+        <h2>Sign In</h2>
+        <div id="logInForm">
+         
+            <label for="firstName">firstName</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" autocomplete="name">
+
+            <label for="lastName">lastName</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" autocomplete="additional-name">
+
+          
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="Email" placeholder="Enter your email" autocomplete="email">
+    
+            <label for="password">Password:</label>
+            <span class="form-group">
+                <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password">
+                <input type="checkbox"  id="checkbox"> 
+            </span>
+
+           <div class="form-group2">
+                <p class="creatAcc">Already have an account ?</p>
+                <a class="creatAccLink" href="/pages/login/login.html">logIn</a>
+           </div>
+
+    
+          <button  onclick="logIn()">Sign In</button>
+           <p id="passwordError" class="error"> </p>
+
+
+           
+        </div>
+      </div>
+    
+      <script src="/pages/signin/sign.js"></script>
+
+    
+</body>
+</html>

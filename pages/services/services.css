@@ -1,0 +1,400 @@
+*{
+    border: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(/images/wendemobg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100hv;
+    margin: 0;
+    backdrop-filter: blur(5px);
+
+}
+
+.Gnav  {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;  
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 17px;
+    background-color: #1c1a1bcb;
+    backdrop-filter: blur(5px);
+
+}
+
+.Gnav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #dec9c9;
+    text-transform: uppercase;
+    padding: 2.6px 13px 2.6px;
+    background-color:#775c4ea5;
+    border-radius: 8px;
+
+}
+ 
+.Gnav a:hover{
+    background-color:#775c4e3a;
+    border-right:1px solid rgb(194, 155, 78);
+    border-bottom:1.5px solid rgba(194, 155, 78, 0.397);
+}
+
+.firstnav{
+    margin: 0px 0px 0px 200px;
+}
+
+.secondnav{
+    margin: 0px 0px 0px 0px;
+
+}
+.firstnav a{
+    padding: 0px 10px 0px 10px;
+}
+
+.secondnav a{
+    padding: 0px 10px 0px 10px;
+}
+
+.secondnav{
+    margin: 0px 10px 0px 10px;
+ 
+}
+
+
+@media (min-width:100px) and (max-width:300px) {
+    .body{
+        background-color: white;
+    }
+    .firstnav {
+        display: none;
+    }
+
+    .secondnav{
+        display: flex;
+        margin-right: 80px;
+        width: 120px;
+}
+
+}
+@media (min-width:423px) and (max-width:532px){
+
+    .firstnav{
+        display: none;
+    }
+
+
+
+}
+
+
+@media  (max-width:300px)  {
+
+
+   .firstnav{
+            display: none;
+
+   }
+
+    .Gnav{
+        display: flow-root;
+        margin: auto;
+        padding: -19px;
+    }
+    
+    
+    .Gnav a{
+        font-size: 9px;
+        justify-content: center;
+    }
+
+
+    .secondnav{
+        margin-top: 5px;
+        margin-bottom: -7px;
+    }
+
+    .secondnav a{
+        margin: 0px 18px 0px;
+        font-size: 7px;
+        text-align: center;
+    }
+
+    .secondnav a:last-of-type{
+        padding-top: 3.5px;
+    }
+
+}
+
+
+
+@media (min-width:300px) and (max-width:600px)  {
+    body{
+        background-color: yellow;
+    }
+
+   .firstnav{
+            display: none;
+
+   }
+
+    .Gnav{
+        display: flow-root;
+        margin: auto;
+    }
+    
+    
+    .Gnav a{
+        font-size: 10px;
+        justify-content: center;
+    }
+
+    .secondnav{
+        margin-bottom: -7px;
+        margin-left: 20px;
+ 
+    }
+
+    .secondnav a{
+        margin: 0px 30px 4px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+@media  (min-width:790px) and (max-width:950px)  {
+
+    .Gnav{
+        display: flow-root;
+    }
+
+    .firstnav{
+        margin-left:270px ;
+        width:500px;
+    }
+
+    
+    .Gnav a{
+        font-size: 13px;
+
+    }
+    .firstnav a{
+        margin: 0px 80px 0px;
+
+    }
+
+    .service{
+        margin-left: 15px;
+    }
+
+    .secondnav{
+        margin-top: 5px;
+        margin-left: 130px ;
+        width: 80%;
+    }
+
+    .secondnav a{
+        display:inline-flex ;
+        justify-content: space-around;
+        margin: 0px 60px 0px;
+ 
+    }
+}
+
+@media  (min-width:572px) and (max-width:795px)  {
+    body{
+        background-color: red;
+    }
+
+    .service{
+        margin-bottom: -12px;
+    }
+
+    .Gnav{
+        display: list-item;
+        padding: 12px ;
+    }
+    .firstnav{
+        width: 260px;
+        margin-left: 350px;
+    }
+
+
+    .secondnav a{
+        margin: 0px 50px 0px;
+        font-size: 13px;
+
+    }
+
+    .firstnav a{
+        margin: 0px 35px 0px;
+        font-size: 11px;
+
+    }
+}
+
+
+
+.box{
+    /* background: linear-gradient(200deg,#271c20b7, #3c8bbc2f ); */
+    width: 92%;
+    height: 100%;
+    margin: 45px 40px 70px;
+    padding: 20px 45px 60px;
+    border: 7px solid #2a2226dd;
+    border-top-left-radius:70px;
+    border-left: 12px;
+    
+    position:sticky;
+    top: 30px;
+}
+
+.box:hover{
+    background: linear-gradient(160deg,#271c20e7, #86b0cb56 );
+}
+
+
+
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Responsive Grid */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: linear-gradient(120deg,#271c201b, #141619 );
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+}
+
+.service {
+    background-color: #514b4e9d;
+    padding: 14px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0px 0px 0px;
+}
+
+.service:hover{
+    background-color:  #191416;
+     transform: rotate(10deg);
+     transition: 12sec ease-in-out;
+     border-radius:13px ;
+     color:  #857b7fe7;
+}
+
+.service h2   {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service a{
+    text-decoration: none;
+    text-align: center;
+    color: #ffffffa0;
+}
+
+
+
+button {
+    background-color: #191416;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+        
+}
+
+button:hover {
+    background-color: #463f41a8;
+}
+
+
+
+p {
+    margin-top: 10px;   
+    font-size: 14px;
+    color: #666;
+}
+
+@media(min-width:400px) {
+    .service:hover{
+    transform: rotate(4deg);
+    transition: 12sec ease-in-out;
+    } 
+
+    .service{
+        padding: 20px;
+        gap: 30px;
+    }
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 600px) {
+ .grid{
+        grid-template-columns: repeat(2, 3fr);
+        width: fit-content;
+        margin: auto;
+      }
+
+      .container{
+        width: fit-content;
+  
+      } 
+    .service:hover{
+     transform: rotate(7deg);
+     transition: 12sec ease-in-out;
+
+    }
+
+    .container{
+        margin: right 400px; ;
+    } 
+
+    
+
+}
+
+@media (min-width: 900px) {
+    .grid{
+        grid-template-columns: repeat(2, 3fr);
+        width: fit-content;
+        padding: 15px;
+        }
+
+    @media (min-width: 1200px) {
+        .grid{
+            grid-template-columns: repeat(4, 2fr);
+            width: fit-content;
+            padding: 15px;
+            margin: auto;
+        }
+
+        .service{
+            padding: 7px;
+          }  
+}
+
+}

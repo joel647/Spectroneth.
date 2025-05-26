@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Airtime</title>
+    <link rel="stylesheet" href="/pages/ourservices/airtime/airtime.css">
+</head>
+<body>
+
+    <div class="Gnav">
+       
+        <a class="service" href="/pages/services/services.html">service</a>
+
+        <div class="firstnav">
+            <a href="/pages/signin/sign.html">signIn</a>
+            <a href="/pages/login/login.html">logIn</a>
+        </div>
+
+        <div class="secondnav">
+            <a href="/pages/contact us/contact us.html">contact us</a>
+            <a href="/pages/about us/about us.html">about us</a>
+            <a href="/pages/faq/faq.html">faQ</a>
+        </div>
+
+    </div>
+   
+    <div class="container">
+        <h1>Airtime</h1>
+        
+        <form id="airtimeForm">
+          <label for="provider">Select Provider:</label>
+          <select id="provider" required>
+            <option value="">-- Select --</option>
+            <option value="MTN">MTN</option>
+            <option value="GLO NG">GLO NG</option>
+            <option value="AIRTEL">AIRTEL</option>
+            <option value="9 MOBILE">9 MOBILE</option>
+          </select>       
+    
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number" required >
+    
+          <label for="amount">Amount :</label>
+          <input type="text" id="amount" placeholder="Enter amount" required>
+    
+          <button type="submit">Buy Airtime</button>
+        </form>
+    
+        <p id="message"></p>
+      </div>
+    
+      <script src="/pages/ourservices/airtime/airtime.js"></script>
+</body>
+</html>

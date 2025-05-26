@@ -1,0 +1,379 @@
+*{
+    border: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(/images/wendemobg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100hv;
+    margin: 0;
+}
+
+.Gnav  {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;  
+    padding: 11px;
+    background-color: #271c2081;
+}
+
+.Gnav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #dec9c9;
+    text-transform: uppercase;
+    padding: 1.8px 13px 1.8px;
+    background-color:#775c4ea5;
+    border-radius: 8px;
+
+}
+ 
+.Gnav a:hover{
+    background-color:#775c4e3a;
+    border-right:1px solid rgb(194, 155, 78);
+    border-bottom:1.5px solid rgba(194, 155, 78, 0.397);
+}
+
+.firstnav{
+    margin: 0px 0px 0px 200px;
+}
+
+.secondnav{
+    margin: 0px 0px 0px 0px;
+
+}
+.firstnav a{
+    padding: 0px 10px 0px 10px;
+}
+
+.secondnav a{
+    padding: 0px 10px 0px 10px;
+}
+
+.secondnav{
+    margin: 0px 10px 0px 10px;
+ 
+}
+
+
+@media (min-width:100px) and (max-width:300px) {
+    .body{
+        background-color: white;
+    }
+    .firstnav {
+        display: none;
+    }
+
+    .secondnav{
+        display: flex;
+        margin-right: 80px;
+        border: 1px solid red;
+        width: 120px;
+}
+
+}
+@media (min-width:423px) and (max-width:532px){
+    body{
+        background-color: white;
+    }
+
+    .firstnav{
+        display: none;
+    }
+
+
+}
+
+
+@media  (max-width:300px)  {
+    body{
+        background-color: yellow;
+    }
+
+   .firstnav{
+            display: none;
+
+   }
+
+    .Gnav{
+        display: flow-root;
+        margin: auto;
+        padding: -19px;
+    }
+    
+    
+    .Gnav a{
+        font-size: 9px;
+        justify-content: center;
+    }
+
+
+
+    .secondnav{
+        margin-top: 5px;
+        margin-bottom: -7px;
+ 
+    }
+
+    .secondnav a{
+        margin: 0px 18px 0px;
+        font-size: 7px;
+        text-align: center;
+    }
+
+    .secondnav a:last-of-type{
+        padding-top: 3.5px;
+    }
+}
+
+@media (min-width:300px) and (max-width:600px)  {
+    body{
+        background-color: yellow;
+    }
+
+   .firstnav{
+            display: none;
+
+   }
+
+    .Gnav{
+        display: flow-root;
+        margin: auto;
+    }
+    
+    
+    .Gnav a{
+        font-size: 10px;
+        justify-content: center;
+    }
+
+    .secondnav{
+        margin-bottom: -7px;
+        margin-left: 20px;
+ 
+    }
+
+    .secondnav a{
+        margin: 0px 30px 4px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+}
+@media  (min-width:790px) and (max-width:950px)  {
+
+    body{
+        background-color: blue;
+    }
+    .Gnav{
+        display: flow-root;
+    }
+
+    .firstnav{
+        margin-left:270px ;
+        width:500px;
+    }
+
+    
+    .Gnav a{
+        font-size: 13px;
+    }
+    .firstnav a{
+        margin: 0px 80px 0px;
+
+    }
+
+    .service{
+        margin-left: 15px;
+    }
+
+    .secondnav{
+        margin-top: 5px;
+        margin-left: 130px ;
+        width: 80%;
+    }
+
+    .secondnav a{
+        display:inline-flex ;
+        justify-content: space-around;
+        margin: 0px 60px 0px;
+ 
+    }
+}
+
+@media  (min-width:572px) and (max-width:795px)  {
+    body{
+        background-color: red;
+    }
+
+    .service{
+        margin-bottom: -12px;
+    }
+
+    .Gnav{
+        display: list-item;
+        padding: 12px ;
+    }
+    .firstnav{
+        width: 260px;
+        margin-left: 350px;
+    }
+
+
+    .secondnav a{
+        margin: 0px 50px 0px;
+        font-size: 13px;
+
+    }
+
+    .firstnav a{
+        margin: 0px 35px 0px;
+        font-size: 11px;
+
+    }
+}
+
+.login-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.575);
+    width: 80%;
+    max-width: 420px;
+    margin: auto;
+    margin-top:3%;
+    background: linear-gradient(120deg,#271c201b, #191416 );
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    
+  }
+
+  .userdetails{
+    border: 1px solid red   ;
+  }
+
+
+.login-container  h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #211108b6;
+    font-size: 30px;
+    text-shadow: 2.5px 2px 3px ;
+
+  }
+
+  .form-group {
+    display: flex;
+  }
+
+  #password{
+    width: 94%;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  
+  }
+
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 1.5px;
+    outline: none;
+    /* border: none; */
+    border-radius: 4.7px;
+    background: transparent;
+  }
+  input:hover{
+    border: 3.1px solid #61463846;
+  }
+
+  input{
+    border: 1px solid #ffffff00;
+    border-bottom: 2.5px solid #ffffff65;
+  }
+
+  input:focus-within{
+    border: 2px solid #ffffff34;
+  }
+  button {
+    width: 50%;
+    padding: 5px;
+    background:#35231a32;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12Spx;
+    margin: 5px 80px 10px;
+  }
+
+
+  
+  button:hover {
+    background: #4f3426cb;
+    
+  }
+
+  .error {
+    color:red;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 70px 0px;
+    letter-spacing: 5px;
+    text-align: center;
+    width: 200px;
+  }
+
+  #checkbox{
+    width: 12px;
+    margin-left: 13px; 
+  }
+
+  .form-group2{
+    display: flex;
+    align-items: center ;
+    justify-content: space-around;
+    color: #3413131f;
+    font-size: 14px;
+    margin-right:10px ;
+    margin: 5px 20px 10px;
+  }
+
+ .creatAccLink{
+    font-size: 24px;
+    margin-right: 35px;
+    border: 1px solid #201c1c;
+    border-radius:8px ;
+    background-color: #ffffff1f;
+    padding: 0px 12px 0px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #341313;
+    text-transform: uppercase;
+    font-style:italic ;
+    border-radius: 8px;
+    
+
+ }
+
+
+.creatAcc{
+    margin-right: 20px;
+    color: #ece7e771;
+  
+}
+
+ .creatAccLink:hover{
+    color: #000;
+    transform: rotate(360deg);
+    transition: 0.5s ease-in-out;
+    background-color: #21110811;
+ }
+
+
